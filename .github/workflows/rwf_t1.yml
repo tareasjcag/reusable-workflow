@@ -13,4 +13,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Imprimir variable de entorno
-        run: echo 'Hola como te va ${{ inputs.nombre }}'
+        run: |
+          echo "La variable de entorno es: ${{ inputs.nombre }}"
